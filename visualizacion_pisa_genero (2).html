@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"gridColor": "#EAEAEA", "labelFontSize": 12, "titleFontSize": 13}, "legend": {"labelFontSize": 12, "orient": "bottom", "titleFontSize": 12}}, "layer": [{"mark": {"type": "line", "strokeWidth": 3}, "encoding": {"color": {"field": "sexo", "scale": {"domain": ["Mujeres", "Hombres"], "range": ["#008F83", "#E16B55"]}, "title": "Sexo", "type": "nominal"}, "tooltip": [{"field": "anio", "title": "A\u00f1o", "type": "ordinal"}, {"field": "sexo", "title": "Sexo", "type": "nominal"}, {"field": "puntaje_lectura", "title": "Puntaje", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "anio", "title": "A\u00f1o de evaluaci\u00f3n", "type": "ordinal"}, "y": {"field": "puntaje_lectura", "scale": {"domain": [380, 485]}, "title": "Puntaje promedio en lectura", "type": "quantitative"}}}, {"mark": {"type": "circle", "size": 85}, "encoding": {"color": {"field": "sexo", "scale": {"domain": ["Mujeres", "Hombres"], "range": ["#008F83", "#E16B55"]}, "title": "Sexo", "type": "nominal"}, "tooltip": [{"field": "anio", "title": "A\u00f1o", "type": "ordinal"}, {"field": "sexo", "title": "Sexo", "type": "nominal"}, {"field": "puntaje_lectura", "title": "Puntaje", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "anio", "title": "A\u00f1o de evaluaci\u00f3n", "type": "ordinal"}, "y": {"field": "puntaje_lectura", "scale": {"domain": [380, 485]}, "title": "Puntaje promedio en lectura", "type": "quantitative"}}}, {"data": {"name": "data-1324d715f80c779a4d5573cd51a454aa"}, "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 14, "fontWeight": "bold"}, "encoding": {"color": {"field": "sexo", "legend": null, "scale": {"domain": ["Mujeres", "Hombres"], "range": ["#008F83", "#E16B55"]}, "type": "nominal"}, "text": {"field": "puntaje_lectura", "type": "quantitative"}, "x": {"field": "anio", "type": "ordinal"}, "y": {"field": "puntaje_lectura", "scale": {"domain": [380, 485]}, "type": "quantitative"}}}], "data": {"name": "data-00a1fe21ad539607147c4ae169b725ce"}, "height": 400, "title": {"text": "La ventaja lectora de las mujeres chilenas se estrecha", "anchor": "start", "fontSize": 21, "subtitle": ["Entre 2018 y 2022, la brecha pas\u00f3 de 20 a 6 puntos.", "En 2022, la diferencia dej\u00f3 de ser estad\u00edsticamente significativa."], "subtitleFontSize": 13}, "width": 750, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-00a1fe21ad539607147c4ae169b725ce": [{"anio": 2000, "sexo": "Mujeres", "puntaje_lectura": 421, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2006, "sexo": "Mujeres", "puntaje_lectura": 451, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2009, "sexo": "Mujeres", "puntaje_lectura": 461, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2012, "sexo": "Mujeres", "puntaje_lectura": 452, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2015, "sexo": "Mujeres", "puntaje_lectura": 465, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2018, "sexo": "Mujeres", "puntaje_lectura": 462, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2022, "sexo": "Mujeres", "puntaje_lectura": 451, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2000, "sexo": "Hombres", "puntaje_lectura": 396, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2006, "sexo": "Hombres", "puntaje_lectura": 434, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2009, "sexo": "Hombres", "puntaje_lectura": 439, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2012, "sexo": "Hombres", "puntaje_lectura": 430, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2015, "sexo": "Hombres", "puntaje_lectura": 453, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2018, "sexo": "Hombres", "puntaje_lectura": 442, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2022, "sexo": "Hombres", "puntaje_lectura": 445, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}], "data-1324d715f80c779a4d5573cd51a454aa": [{"anio": 2022, "sexo": "Mujeres", "puntaje_lectura": 451, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}, {"anio": 2022, "sexo": "Hombres", "puntaje_lectura": 445, "fuente": "Agencia de Calidad de la Educaci\u00f3n, PISA 2022"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
